@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bibliothèque - Brown Diamonds</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="Assets/styles.css">
+    <link rel="stylesheet" href="Assets/library.css">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo-container">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-gem" style="color: #b8860b;"></i>
+                    <span>Brown Diamonds</span>
+                </a>
+            </div>
+            
+            <div class="search-container">
+                <form class="search-form">
+                    <input type="text" placeholder="Rechercher dans votre bibliothèque..." class="search-input">
+                    <button type="submit" class="search-button" title="Rechercher">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+            </div>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="discover.html">Découvrir</a></li>
+                    <li><a href="library.html" class="active">Bibliothèque</a></li>
+                    <li><a href="upgrade.html" class="btn-upgrade">Upgrade</a></li>
+                    <!--<li><a href="#" class="btn-login">Connexion</a></li>
+                    <li><a href="#" class="btn-signup">Inscription</a></li>-->
+                </ul>
+            </nav>
+            
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content library-main">
+        <!-- Library Header -->
+        <div class="library-header">
+            <h1>Votre Bibliothèque</h1>
+            <div class="library-actions">
+                <button class="btn-sort">
+                    <i class="fas fa-sort"></i>
+                    <span>Trier</span>
+                </button>
+                <button class="btn-filter">
+                    <i class="fas fa-filter"></i>
+                    <span>Filtrer</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Library Tabs -->
+        <div class="library-tabs">
+            <button class="tab-btn active" data-tab="playlists">Playlists</button>
+            <button class="tab-btn" data-tab="tracks">Morceaux</button>
+            <button class="tab-btn" data-tab="albums">Albums</button>
+            <button class="tab-btn" data-tab="artists">Artistes</button>
+            <button class="tab-btn" data-tab="favorites">Favoris</button>
+        </div>
+
+        <!-- Library Content -->
+        <div class="library-content">
+            <!-- Playlists Tab -->
+            <div class="tab-content active" id="playlists">
+                <div class="playlists-grid">
+                    <!-- Playlist 1 -->
+                    <div class="playlist-card">
+                        <div class="playlist-image">
+                            <img src="Media/pl.png" alt="Playlist Cover">
+                            <button class="play-button">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                        <div class="playlist-info">
+                            <h3>Brown Diamonds - Best Of</h3>
+                            <p class="details">24 morceaux · Créée par vous</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Playlist 2 -->
+                    <div class="playlist-card">
+                        <div class="playlist-image">
+                            <img src="https://via.placeholder.com/300x300" alt="Playlist Cover">
+                            <button class="play-button">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                        <div class="playlist-info">
+                            <h3>Énergie Diamant</h3>
+                            <p class="details">12 morceaux · Créée par vous</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Playlist 3 -->
+                    <div class="playlist-card">
+                        <div class="playlist-image">
+                            <img src="https://via.placeholder.com/300x300" alt="Playlist Cover">
+                            <button class="play-button">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                        <div class="playlist-info">
+                            <h3>Diamonds Uncut</h3>
+                            <p class="details">8 morceaux · Créée par vous</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Create New Playlist -->
+                    <div class="playlist-card create-new">
+                        <div class="create-icon">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                        <div class="playlist-info">
+                            <h3>Créer une nouvelle playlist</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tracks Tab -->
+            <div class="tab-content" id="tracks">
+                <div class="tracks-list">
+                    <div class="list-header">
+                        <div class="header-number">#</div>
+                        <div class="header-title">TITRE</div>
+                        <div class="header-artist">ARTISTE</div>
+                        <div class="header-album">ALBUM</div>
+                        <div class="header-duration">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                    </div>
+                    
+                    <!-- Track 1 -->
+                    <div class="track-row">
+                        <div class="track-number">1</div>
+                        <div class="track-play">
+                            <button class="play-btn-small">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                        <div class="track-info">
+                            <img src="https://via.placeholder.com/50x50" alt="Track Cover" class="track-thumbnail">
+                            <div class="track-details">
+                                <h4>Brillant comme un diamant</h4>
+                                <p>Brown Diamonds</p>
+                            </div>
+                        </div>
+                        <div class="track-album">Diamonds in the Rough</div>
+                        <div class="track-duration">3:42</div>
+                        <div class="track-actions">
+                            <button class="like-btn">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <button class="more-btn">
+                                <i class="fas fa-ellipsis-h"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Track 2 -->
+                    <div class="track-row">
+                        <div class="track-number">2</div>
+                        <div class="track-play">
+                            <button class="play-btn-small">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                        <div class="track-info">
+                            <img src="https://via.placeholder.com/50x50" alt="Track Cover" class="track-thumbnail">
+                            <div class="track-details">
+                                <h4>Under Pressure</h4>
+                                <p>Brown Diamonds</p>
+                            </div>
+                        </div>
+                        <div class="track-album">Pressure Makes Diamonds</div>
+                        <div class="track-duration">4:15</div>
+                        <div class="track-actions">
+                            <button class="like-btn">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <button class="more-btn">
+                                <i class="fas fa-ellipsis-h"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Track 3 -->
+                    <div class="track-row">
+                        <div class="track-number">3</div>
+                        <div class="track-play">
+                            <button class="play-btn-small">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                        <div class="track-info">
+                            <img src="https://via.placeholder.com/50x50" alt="Track Cover" class="track-thumbnail">
+                            <div class="track-details">
+                                <h4>Rough Edges</h4>
+                                <p>Brown Diamonds</p>
+                            </div>
+                        </div>
+                        <div class="track-album">Uncut</div>
+                        <div class="track-duration">3:28</div>
+                        <div class="track-actions">
+                            <button class="like-btn liked">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <button class="more-btn">
+                                <i class="fas fa-ellipsis-h"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Track 4 -->
+                    <div class="track-row">
+                        <div class="track-number">4</div>
+                        <div class="track-play">
+                            <button class="play-btn-small">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                        <div class="track-info">
+                            <img src="https://via.placeholder.com/50x50" alt="Track Cover" class="track-thumbnail">
+                            <div class="track-details">
+                                <h4>Carbon Love</h4>
+                                <p>Brown Diamonds</p>
+                            </div>
+                        </div>
+                        <div class="track-album">Diamonds in the Rough</div>
+                        <div class="track-duration">5:12</div>
+                        <div class="track-actions">
+                            <button class="like-btn">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <button class="more-btn">
+                                <i class="fas fa-ellipsis-h"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Albums Tab -->
+            <div class="tab-content" id="albums">
+                <div class="albums-grid">
+                    <!-- Album 1 -->
+                    <div class="album-card">
+                        <div class="album-image">
+                            <img src="https://via.placeholder.com/400x400" alt="Album Cover">
+                            <button class="play-button">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                        <div class="album-info">
+                            <h3>Diamonds in the Rough</h3>
+                            <p class="year">2023 · 12 morceaux</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Album 2 -->
+                    <div class="album-card">
+                        <div class="album-image">
+                            <img src="https://via.placeholder.com/400x400" alt="Album Cover">
+                            <button class="play-button">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                        <div class="album-info">
+                            <h3>Pressure Makes Diamonds</h3>
+                            <p class="year">2021 · 10 morceaux</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Album 3 -->
+                    <div class="album-card">
+                        <div class="album-image">
+                            <img src="https://via.placeholder.com/400x400" alt="Album Cover">
+                            <button class="play-button">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                        <div class="album-info">
+                            <h3>Uncut</h3>
+                            <p class="year">2019 · 8 morceaux</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Artists Tab -->
+            <div class="tab-content" id="artists">
+                <div class="artists-grid">
+                    <!-- Artist 1 -->
+                    <div class="artist-card">
+                        <div class="artist-image">
+                            <img src="https://via.placeholder.com/300x300" alt="Artist">
+                        </div>
+                        <div class="artist-info">
+                            <h3>Brown Diamonds</h3>
+                            <p class="type">Groupe</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Artist 2 -->
+                    <div class="artist-card">
+                        <div class="artist-image">
+                            <img src="https://via.placeholder.com/300x300" alt="Artist">
+                        </div>
+                        <div class="artist-info">
+                            <h3>DJ Diamond Cut</h3>
+                            <p class="type">Artiste associé</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Favorites Tab -->
+            <div class="tab-content" id="favorites">
+                <div class="favorites-message">
+                    <i class="fas fa-heart"></i>
+                    <h2>Vos morceaux favoris</h2>
+                    <p>Les morceaux que vous avez aimés apparaîtront ici</p>
+                    <button class="btn-discover">Découvrir de la musique</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Player Bar -->
+    <div class="player-bar">
+        <div class="player-container">
+            <div class="player-track-info">
+                <img src="https://via.placeholder.com/50x50" alt="Now Playing" class="player-track-image">
+                <div class="player-track-details">
+                    <h4 class="player-track-title">Brillant comme un diamant</h4>
+                    <p class="player-track-artist">Brown Diamonds</p>
+                </div>
+                <button class="player-like-btn">
+                    <i class="far fa-heart"></i>
+                </button>
+            </div>
+            
+            <div class="player-controls">
+                <div class="player-buttons">
+                    <button class="player-shuffle"><i class="fas fa-random"></i></button>
+                    <button class="player-prev"><i class="fas fa-step-backward"></i></button>
+                    <button class="player-play"><i class="fas fa-play"></i></button>
+                    <button class="player-next"><i class="fas fa-step-forward"></i></button>
+                    <button class="player-repeat"><i class="fas fa-redo"></i></button>
+                </div>
+                <div class="player-progress">
+                    <span class="player-time-current">0:00</span>
+                    <div class="player-progress-bar">
+                        <div class="player-progress-filled"></div>
+                    </div>
+                    <span class="player-time-total">3:42</span>
+                </div>
+            </div>
+            
+            <div class="player-extra">
+                <button class="player-queue"><i class="fas fa-list-ul"></i></button>
+                <div class="player-volume">
+                    <i class="fas fa-volume-up"></i>
+                    <div class="player-volume-bar">
+                        <div class="player-volume-filled"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="Assets/script.js"></script>
+    <script src="Assets/library.js"></script>
+</body>
+</html>

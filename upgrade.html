@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upgrade - Brown Diamonds</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="Assets/styles.css">
+    <link rel="stylesheet" href="Assets/upgrade.css">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo-container">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-gem" style="color: #b8860b;"></i>
+                    <span>Brown Diamonds</span>
+                </a>
+            </div>
+            
+            <div class="search-container">
+                <form class="search-form">
+                    <input type="text" placeholder="Rechercher..." class="search-input">
+                    <button type="submit" class="search-button" title="Rechercher">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+            </div>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="discover.html">Découvrir</a></li>
+                    <li><a href="library.html">Bibliothèque</a></li>
+                    <li><a href="upgrade.html" class="btn-upgrade active">Upgrade</a></li>
+                    <!--<li><a href="#" class="btn-login">Connexion</a></li>
+                    <li><a href="#" class="btn-signup">Inscription</a></li>-->
+                </ul>
+            </nav>
+            
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content upgrade-main">
+        <!-- Hero Section -->
+        <section class="upgrade-hero">
+            <div class="hero-content">
+                <h1>Passez à Brown Diamonds Premium</h1>
+                <p>Profitez d'une expérience musicale sans publicité, hors ligne et en haute qualité</p>
+                <div class="hero-badges">
+                    <span class="badge"><i class="fas fa-crown"></i> Premium</span>
+                    <span class="badge"><i class="fas fa-headphones"></i> Haute qualité</span>
+                    <span class="badge"><i class="fas fa-mobile-alt"></i> Hors ligne</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Plans -->
+        <section class="pricing-section">
+            <div class="section-header">
+                <h2>Choisissez votre offre</h2>
+                <div class="billing-toggle">
+                    <span>Mensuel</span>
+                    <label class="switch">
+                        <input type="checkbox" id="billingToggle" title="Basculer entre les plans mensuels et annuels">
+                            <span class="slider round"></span>
+                        <span class="slider round"></span>
+                    </label>
+                    <span>Annuel <span class="discount-badge">-20%</span></span>
+                </div>
+            </div>
+            
+            <div class="pricing-grid">
+                <!-- Plan 1 -->
+                <div class="pricing-card">
+                    <div class="plan-header">
+                        <h3>Étudiant</h3>
+                        <div class="price monthly-price">4,99€<span>/mois</span></div>
+                        <div class="price yearly-price hidden">3,99€<span>/mois</span></div>
+                        <p class="yearly-text hidden">47,88€ facturés annuellement</p>
+                    </div>
+                    <div class="plan-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Écoute sans publicité</li>
+                            <li><i class="fas fa-check"></i> Téléchargement hors ligne</li>
+                            <li><i class="fas fa-check"></i> Audio haute qualité</li>
+                            <li><i class="fas fa-check"></i> Accès aux contenus exclusifs</li>
+                            <li><i class="fas fa-check"></i> Réduction étudiant vérifiée</li>
+                        </ul>
+                    </div>
+                    <button class="btn-select-plan">Sélectionner</button>
+                </div>
+                
+                <!-- Plan 2 (Featured) -->
+                <div class="pricing-card featured">
+                    <div class="featured-badge">POPULAIRE</div>
+                    <div class="plan-header">
+                        <h3>Individuel</h3>
+                        <div class="price monthly-price">9,99€<span>/mois</span></div>
+                        <div class="price yearly-price hidden">7,99€<span>/mois</span></div>
+                        <p class="yearly-text hidden">95,88€ facturés annuellement</p>
+                    </div>
+                    <div class="plan-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Écoute sans publicité</li>
+                            <li><i class="fas fa-check"></i> Téléchargement hors ligne</li>
+                            <li><i class="fas fa-check"></i> Audio très haute qualité</li>
+                            <li><i class="fas fa-check"></i> Accès aux contenus exclusifs</li>
+                            <li><i class="fas fa-check"></i> Accès aux concerts virtuels</li>
+                        </ul>
+                    </div>
+                    <button class="btn-select-plan">Sélectionner</button>
+                </div>
+                
+                <!-- Plan 3 -->
+                <div class="pricing-card">
+                    <div class="plan-header">
+                        <h3>Duo</h3>
+                        <div class="price monthly-price">12,99€<span>/mois</span></div>
+                        <div class="price yearly-price hidden">10,39€<span>/mois</span></div>
+                        <p class="yearly-text hidden">124,68€ facturés annuellement</p>
+                    </div>
+                    <div class="plan-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> 2 comptes Premium</li>
+                            <li><i class="fas fa-check"></i> Écoute sans publicité</li>
+                            <li><i class="fas fa-check"></i> Téléchargement hors ligne</li>
+                            <li><i class="fas fa-check"></i> Audio très haute qualité</li>
+                            <li><i class="fas fa-check"></i> Playlists partagées</li>
+                        </ul>
+                    </div>
+                    <button class="btn-select-plan">Sélectionner</button>
+                </div>
+                
+                <!-- Plan 4 -->
+                <div class="pricing-card">
+                    <div class="plan-header">
+                        <h3>Famille</h3>
+                        <div class="price monthly-price">15,99€<span>/mois</span></div>
+                        <div class="price yearly-price hidden">12,79€<span>/mois</span></div>
+                        <p class="yearly-text hidden">153,48€ facturés annuellement</p>
+                    </div>
+                    <div class="plan-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Jusqu'à 6 comptes Premium</li>
+                            <li><i class="fas fa-check"></i> Écoute sans publicité</li>
+                            <li><i class="fas fa-check"></i> Téléchargement hors ligne</li>
+                            <li><i class="fas fa-check"></i> Contrôle parental</li>
+                            <li><i class="fas fa-check"></i> Gestion familiale</li>
+                        </ul>
+                    </div>
+                    <button class="btn-select-plan">Sélectionner</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features-section">
+            <div class="section-header">
+                <h2>Ce que vous obtenez avec Premium</h2>
+            </div>
+            
+            <div class="features-grid">
+                <!-- Feature 1 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-ad"></i>
+                    </div>
+                    <h3>Zéro publicité</h3>
+                    <p>Profitez de votre musique sans interruption publicitaire.</p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Écoute hors ligne</h3>
+                    <p>Téléchargez vos morceaux et écoutez sans connexion internet.</p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <h3>Haute qualité audio</h3>
+                    <p>Son haute résolution pour une expérience immersive.</p>
+                </div>
+                
+                <!-- Feature 4 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h3>Contenu exclusif</h3>
+                    <p>Accès aux lives, versions inédites et contenus Brown Diamonds exclusifs.</p>
+                </div>
+                
+                <!-- Feature 5 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-ticket-alt"></i>
+                    </div>
+                    <h3>Billets préférés</h3>
+                    <p>Accès prioritaire aux billets de concerts et réductions.</p>
+                </div>
+                
+                <!-- Feature 6 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-headphones"></i>
+                    </div>
+                    <h3>Écoute illimitée</h3>
+                    <p>Accès à toute la discographie de Brown Diamonds sans restriction.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials-section">
+            <div class="section-header">
+                <h2>Ce que disent nos fans</h2>
+            </div>
+            
+            <div class="testimonials-grid">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Grâce à Premium, je peux écouter Brown Diamonds pendant mes trajets sans souci de connexion. Les versions exclusives valent vraiment le coup!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://via.placeholder.com/50x50" alt="User">
+                        <div class="author-info">
+                            <h4>Marie L.</h4>
+                            <p>Abonnée depuis 2022</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"La qualité audio est exceptionnelle. On entend chaque détail des compositions complexes du groupe. Je ne pourrais plus m'en passer."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://via.placeholder.com/50x50" alt="User">
+                        <div class="author-info">
+                            <h4>Thomas R.</h4>
+                            <p>Abonné depuis 2021</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"L'abonnement famille est parfait pour nous. Mes enfants adorent Brown Diamonds autant que moi!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://via.placeholder.com/50x50" alt="User">
+                        <div class="author-info">
+                            <h4>Sophie et Marc D.</h4>
+                            <p>Abonnés depuis 2020</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="section-header">
+                <h2>Questions fréquentes</h2>
+            </div>
+            
+            <div class="faq-accordion">
+                <!-- Question 1 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Comment fonctionne l'abonnement étudiant?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>L'abonnement étudiant offre une réduction de 50% sur l'offre Individuel. Vous devez fournir une preuve de votre statut étudiant valide lors de l'inscription. La vérification se fait via un service tiers et doit être renouvelée chaque année.</p>
+                    </div>
+                </div>
+                
+                <!-- Question 2 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Puis-je changer ou annuler mon abonnement?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Oui, vous pouvez changer de formule ou annuler votre abonnement à tout moment depuis votre compte. Les changements prendront effet à la fin de votre période de facturation en cours.</p>
+                    </div>
+                </div>
+                
+                <!-- Question 3 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Quelle est la différence entre les qualités audio?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Nous proposons trois niveaux de qualité : Standard (128 kbps), Haute qualité (320 kbps) et Très haute qualité (lossless jusqu'à 1411 kbps). Plus la qualité est élevée, plus la consommation de données est importante.</p>
+                    </div>
+                </div>
+                
+                <!-- Question 4 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Comment fonctionnent les téléchargements hors ligne?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Avec Premium, vous pouvez télécharger vos morceaux et playlists favoris sur jusqu'à 5 appareils. Les téléchargements sont disponibles pendant 30 jours sans connexion internet.</p>
+                    </div>
+                </div>
+                
+                <!-- Question 5 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Quels sont les moyens de paiement acceptés?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Nous acceptons les cartes de crédit/débit (Visa, Mastercard, American Express), PayPal, et pour certains pays, les paiements mobiles et virements bancaires.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="faq-contact">
+                <p>Vous avez d'autres questions? <a href="#">Contactez notre équipe</a></p>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <h2>Prêt à vivre l'expérience Brown Diamonds Premium?</h2>
+            <p>Rejoignez des milliers de fans qui profitent de la musique sans limites.</p>
+            <button class="btn-cta">Commencer l'essai gratuit</button>
+            <p class="small-text">1 mois gratuit, puis à partir de 4,99€/mois. Annulation possible à tout moment.</p>
+        </section>
+    </main>
+
+    <!-- Player Bar -->
+    <div class="player-bar">
+        <div class="player-container">
+            <div class="player-track-info">
+                <img src="https://via.placeholder.com/50x50" alt="Now Playing" class="player-track-image">
+                <div class="player-track-details">
+                    <h4 class="player-track-title">Brillant comme un diamant</h4>
+                    <p class="player-track-artist">Brown Diamonds</p>
+                </div>
+                <button class="player-like-btn" title="Ajouter aux favoris">
+                    <i class="far fa-heart"></i>
+                </button>
+            </div>
+            
+            <div class="player-controls">
+                <div class="player-buttons">
+                    <button class="player-shuffle" title="shuffle"><i class="fas fa-random"></i></button>
+                    <button class="player-prev" title="prev"><i class="fas fa-step-backward"></i></button>
+                    <button class="player-play" title="play"><i class="fas fa-play"></i></button>
+                    <button class="player-next" title="next"><i class="fas fa-step-forward"></i></button>
+                    <button class="player-repeat" title="repeat"><i class="fas fa-redo"></i></button>
+                </div>
+                <div class="player-progress">
+                    <span class="player-time-current">0:00</span>
+                    <div class="player-progress-bar">
+                        <div class="player-progress-filled"></div>
+                    </div>
+                    <span class="player-time-total">3:42</span>
+                </div>
+            </div>
+            
+            <div class="player-extra">
+                <button class="player-queue" title="queue"><i class="fas fa-list-ul"></i></button>
+                <div class="player-volume">
+                    <i class="fas fa-volume-up"></i>
+                    <div class="player-volume-bar">
+                        <div class="player-volume-filled"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Brown Diamonds</h3>
+                <ul class="footer-links">
+                    <li><a href="#">À propos</a></li>
+                    <li><a href="#">Musique</a></li>
+                    <li><a href="#">Concerts</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Premium</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Fonctionnalités</a></li>
+                    <li><a href="#">Plans tarifaires</a></li>
+                    <li><a href="#">Essai gratuit</a></li>
+                    <li><a href="#">Statut étudiant</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Légal</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Conditions d'utilisation</a></li>
+                    <li><a href="#">Politique de confidentialité</a></li>
+                    <li><a href="#">Cookies</a></li>
+                    <li><a href="#">Mentions légales</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section social">
+                <h3>Suivez-nous</h3>
+                <div class="social-icons">
+                    <a href="#" title="facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" title="twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" title="instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" title="youtube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" title="spotify"><i class="fab fa-spotify"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2023 Brown Diamonds. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="Assets/script.js"></script>
+    <script src="Assets/upgrade.js"></script>
+</body>
+</html>
